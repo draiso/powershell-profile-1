@@ -9,7 +9,7 @@ $debug = $false
 ############                                                                                                         ############
 ############                DO NOT MODIFY THIS FILE. THIS FILE IS HASHED AND UPDATED AUTOMATICALLY.                  ############
 ############                    ANY CHANGES MADE TO THIS FILE WILL BE OVERWRITTEN BY COMMITS TO                      ############
-############                       https://github.com/draiso/powershell-profile.git.                                 ############
+############                       https://github.com/draiso/powershell-profile-1.git.                                 ############
 ############                                                                                                         ############
 #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!#
 ############                                                                                                         ############
@@ -155,7 +155,7 @@ function Update-Profile {
         Update-Profile_Override
     } else {
         try {
-            $url = "$repo_root/powershell-profile/main/Microsoft.PowerShell_profile.ps1"
+            $url = "$repo_root/powershell-profile-1/main/Microsoft.PowerShell_profile.ps1"
             $oldhash = Get-FileHash $PROFILE
             Invoke-RestMethod $url -OutFile "$env:temp/Microsoft.PowerShell_profile.ps1"
             $newhash = Get-FileHash "$env:temp/Microsoft.PowerShell_profile.ps1"
